@@ -28,6 +28,7 @@ facebook.com
 ```
 
 ### Usage
+#### Run Script
 ```bash
 # python3 live-host-checker.py -w /root/Desktop/domains.txt
 ```
