@@ -19,7 +19,7 @@ Required Arguments:
   -w WORDLIST  Wordlist file Location [Ex. -w "/root/Desktop/domains.txt"]
 ```
 
-## domains.txt
+### domains.txt
 ```bash
 google.com
 mail.google.com
