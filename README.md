@@ -27,5 +27,10 @@ yahoo.com
 facebook.com
 ```
 
+### Usage
+```bash
+# python3 live-host-checker.py -w /root/Desktop/domains.txt
+```
+
 
 
