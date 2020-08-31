@@ -32,6 +32,10 @@ facebook.com
 ```bash
 # python3 live-host-checker.py -w /root/Desktop/domains.txt
 ```
+#### If You Can Get Output
+```bash
+python3 live-host-checker.py -w /root/Desktop/domains.txt -o found.txt
+```
 
 
 
