@@ -3,3 +3,29 @@ Live Host Checker is a Python Script for Detection the Availability of Website t
 
 ## Requirement
 You must be Install Python3 Version<br/>
+
+## How To Work
+### Help Menu
+```bash
+# python3 live-host-checker.py
+
+usage: live-host-checker.py [-h] [-o OUT] -w WORDLIST
+
+optional arguments:
+  -h, --help   show this help message and exit
+  -o OUT       Output File [Ex. -o "found.txt"]
+
+Required Arguments:
+  -w WORDLIST  Wordlist file Location [Ex. -w "/root/Desktop/domains.txt"]
+```
+
+## domains.txt
+```bash
+google.com
+mail.google.com
+yahoo.com
+facebook.com
+```
+
+
+
