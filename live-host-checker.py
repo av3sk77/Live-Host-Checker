@@ -36,8 +36,6 @@ if not Path(args.wordlist).exists() & Path(args.wordlist).is_file():
    sys.exit()
 
 out_file = args.out
-if out_file is not None:
-   write_file = open(out_file, "a")
 
 def check(list):
     try:
@@ -50,16 +48,18 @@ def check(list):
             pass
         else:
             if out_file is not None:
-                write_file.write(list+"\n")
+                with open(out_file, 'a') as write_file:
+                    write_file.write(list + "\n")
+                    write_file.close()
             print(f"{list} is Exist")
     else:
         if out_file is not None:
-            write_file.write(list+"\n")
+            with open(out_file, 'a') as write_file:
+                write_file.write(list+"\n")
+                write_file.close()
         print(f"{list} is Exist")
 
 with open(args.wordlist, 'r') as domains:
     for list in domains.read().splitlines():
         t = threading.Thread(target=check, args=(list,))
         t.start()
-if out_file is not None:
-    write_file.close()
