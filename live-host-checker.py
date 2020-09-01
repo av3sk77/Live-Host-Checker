@@ -9,6 +9,13 @@ print('''
 ........::....:::::...:::::........:::::..:::::..:::.......::::......::::::..:::::::::......:::..:::::..::........:::......:::..::::..::
 ''')
 
+# Script Title: Live-host-Check
+# Live Host Checker Script
+# Date: 31-08-2020
+# Help Menu- python3 live-host-checker.py
+# Script Usage- python3 live-host-checker.py -w /root/Desktop/domains.txt -o found.txt
+#!/usr/bin/python3
+
 from pathlib import Path
 import argparse
 import requests
