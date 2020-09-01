@@ -61,4 +61,5 @@ with open(args.wordlist, 'r') as domains:
     for list in domains.read().splitlines():
         t = threading.Thread(target=check, args=(list,))
         t.start()
-write_file.close()
+if out_file is not None:
+    write_file.close()
